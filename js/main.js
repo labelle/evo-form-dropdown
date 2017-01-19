@@ -7,7 +7,7 @@ $(".menu-open").hover(function(){
 	
 });
 
-// when mouse leaves  dropdown then hide items
+// when mouse leaves dropdown then hide items
 $(".menu-items").mouseleave(function() {
 	$(".menu-open").removeClass("active");
 	$(".menu-open").children().removeClass("arrow-up");

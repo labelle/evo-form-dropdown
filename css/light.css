@@ -1,5 +1,4 @@
-
-/* body background color and font weight settings */
+// body background color and font weight settings
 
 * {
     box-sizing: border-box;
@@ -18,7 +17,7 @@ body {
     display: inline-block;
     float: left;
     width: 100%;
-    padding: 0 5%;
+   
 }
 /* setting for dropdown */
 .menu {
@@ -30,10 +29,11 @@ body {
     margin: 0 10px;
     text-transform: uppercase;
     font-size: 15px;
+    width:100%;
 }
-/* settings for when main dropdown is opened */
+/* settings for main dropdown is opened */
 .menu > a.menu-open {
-    padding: 20px;
+    padding: 0px 0px 20px 0px; /* to adjust left alignment of dropdown main text increase last 0px to 10px*/
     display: inline-block;
     float: left; 
     border-bottom: 1px solid #555;
@@ -41,9 +41,9 @@ body {
     font-size: 15px;
     line-height: 0;
     font-weight: bold;
-    padding-right: 30px;
     transition: ease .6s;
     max-height: 40px;
+    width: 100%;
 }
 
 
@@ -61,7 +61,8 @@ a {
     float: left;
     margin-top: 5px;
     position: absolute;
-    top: 41px;
+    top: 20px;
+    width:100%;
     /* box-shadow: 1px 2px 5px 1px #e0e0e0; */
     border-bottom: 1px solid #555;
     z-index: 100;
@@ -80,7 +81,7 @@ a {
 
 /* setting for menu items */
 .menu > ul li a {
-    padding: 12px 20px;
+    padding: 12px 0px;/* to adjust left text alignment of menu item increase 0px to 10px */
     line-height: normal;
     display: inline-block;
     float: left;
@@ -111,27 +112,27 @@ a {
     border-bottom-right-radius: 5px;
 }
 
-/* display arrow down when menu is close*/
+/* display arrow down when menu is closed */
 .arrow-up {
     display: inline-block;
     float: right;
     position: absolute;
     right: 3px;
     padding: 10px 5px;
-    margin: 10px 5px;
+    margin: -8px 5px;
     background-image: url(../img/menu-arrow.svg);
     background-repeat: no-repeat;
     top: 0;
 }
 
-/* display arrow up when menu is open*/
+/* display arrow down when menu is open */
 .arrow-down {
     display: inline-block;
     float: right;
     position: absolute;
     right: 3px;
     padding: 10px 5px;
-    margin: 10px 5px;
+    margin: -8px 5px;
     background-image: url(../img/menu-arrow.svg);
     background-repeat: no-repeat;
     top: 0;
